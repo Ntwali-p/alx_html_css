@@ -1,0 +1,35 @@
+/* Make <body> a flex container in column direction */
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100vh; /* ensures the body uses full height of the viewport */
+  margin: 0;
+}
+
+/* Make <main> a flex container in row direction */
+main {
+  display: flex;
+  flex-direction: row;
+  flex: auto; /* allows main to grow/shrink as needed */
+}
+
+/* Make <article> take 2/3 of the horizontal space */
+article {
+  flex: 2;
+  overflow-y: auto;
+  padding: 1rem;
+}
+
+/* Make <aside> take 1/3 of the horizontal space */
+aside {
+  flex: 1;
+  overflow-y: auto;
+  padding: 1rem;
+}
+
+/* Optional: basic styles to visually separate sections */
+header,
+footer {
+  padding: 1rem;
+  background-color: #f0f0f0;
+}
