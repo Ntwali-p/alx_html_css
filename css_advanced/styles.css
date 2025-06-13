@@ -94,7 +94,7 @@ header nav a:hover {
 
 /* PROS SECTION */
 .pros-section {
-  background: linear-gradient(rgba(10, 10, 20, 0.65), tranpsparent),;
+  background: linear-gradient(color black 80%, tranpsparent),;
   padding: 60px 20px;
   color: #ffffff;
 }
