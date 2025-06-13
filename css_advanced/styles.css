@@ -1,0 +1,120 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'source-sans-pro', Spin-Cycle-otf, sans-serif; /* Use the font from Figma */
+    color: #333;
+    background-color: #fff;
+    line-height: 1.6;
+}
+
+/* HEADER */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 60px;
+    background-image: url('image/Object.png'); /* Replace with correct path */
+    background-size: header;
+    background-position: upper full;
+    background-size: cover;
+
+header img {
+    height: 40px; /* Or per Figma spec */
+}
+
+header nav {
+    display: flex;
+    gap: 32px;
+}
+
+header nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    font-size: 16px;
+    transition: color 0.2s ease-in-out;
+}
+
+header nav a:hover {
+    color: #C271FF; /* Use accent color from Figma */
+}
+
+/* FIRST SECTION (HERO / BANNER) */
+main section:first-of-type {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 100px 60px;
+    background-image: url('image/Object.png'); /* Replace with correct path */
+    background-size: cover;
+    background-position: center;
+    color: white; /* Ensure text is readable */
+}
+
+main section:first-of-type > div:first-child {
+    max-width: 500px;
+}
+
+main section:first-of-type h1 {
+    font-size: 48px;
+    font-weight: bold;
+    color: #111; /* Match Figma */
+    margin-bottom: 20px;
+}
+
+main section:first-of-type p {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+main section:first-of-type button {
+    padding: 12px 24px;
+    font-size: 16px;
+    background-color: #C271FF; /* Match Figma primary */
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+}
+
+main section:first-of-type button:hover {
+    background-color: #0056cc;
+}
+
+/* Right-side block with 4 items */
+main section:first-of-type > div:last-child {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+    max-width: 600px;
+}
+
+main section:first-of-type > div:last-child div {
+    background-color: #fff;
+    border: 1px solid #eaeaea;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+main section:first-of-type > div:last-child img {
+    height: 60px;
+    margin-bottom: 10px;
+}
+
+main section:first-of-type > div:last-child h3 {
+    font-size: 20px;
+    margin-bottom: 8px;
+}
+
+main section:first-of-type > div:last-child p {
+    font-size: 14px;
+    color: #777;
+}
