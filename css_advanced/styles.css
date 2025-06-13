@@ -94,7 +94,7 @@ header nav a:hover {
 
 /* PROS SECTION */
 .pros-section {
-  background: linear-gradient(color black 80%, tranpsparent),;
+  background: linear-gradient(transparent, rgba(0,0,0,0.8));
   padding: 60px 20px;
   color: #ffffff;
 }
@@ -138,4 +138,155 @@ header nav a:hover {
 .pros-list p {
   font-size: 13px;
   color: #ccc;
+}
+/* Quote Section */
+.quote-section {
+    background-color: #C271FF;
+    padding: 60px 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    max-width: 1440px;
+    margin: 0 auto;
+    text-align: left;
+    color: #fff;
+}
+
+.quote-section img {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    object-fit: cover;
+    flex-shrink: 0;
+}
+
+.quote-text {
+    max-width: 600px;
+}
+
+.quote-text blockquote {
+    font-style: italic;
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.quote-text p {
+    margin: 0;
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+.quote-text p:last-of-type {
+    font-weight: 300;
+    font-style: italic;
+    font-size: 0.9rem;
+}
+/* Videos Section */
+section {
+  padding: 40px;
+  background-color: #fff;
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+.highlight {
+  color: #C271FF;
+  font-weight: bold;
+}
+
+section h2 {
+  font-size: 28px;
+  margin-bottom: 40px;
+}
+
+section h2 span {
+  color: #a259ff;
+}
+
+section > div {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+article {
+  width: 23%;
+  background-color: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  text-align: left;
+  position: relative;
+}
+
+article img:first-of-type {
+  width: 100%;
+  border-radius: 10px;
+  position: relative;
+}
+
+article h3 {
+  font-size: 18px;
+  margin: 15px;
+}
+
+article p {
+  font-size: 14px;
+  color: #666;
+  margin: 0 15px 15px;
+}
+
+article > div:nth-of-type(1) {
+  display: flex;
+  align-items: center;
+  margin: 0 15px 10px;
+}
+
+article > div:nth-of-type(1) img {
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+}
+
+article > div:nth-of-type(1) h4 {
+  font-size: 14px;
+  margin: 0;
+  color: #a259ff;
+}
+
+article > div:nth-of-type(2) {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 15px 20px;
+}
+
+article > div:nth-of-type(2) img {
+  margin-right: 3px;
+}
+
+article > div:nth-of-type(2) p {
+  font-size: 12px;
+  color: #999;
+  margin-left: auto;
+}
+
+/* Add play button overlay */
+article img:first-of-type {
+  position: relative;
+}
+
+article img:first-of-type::after {
+  content: url('play-icon.png'); /* Replace with your actual play icon */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 48px;
+  height: 48px;
 }
