@@ -111,7 +111,7 @@ header nav a:hover {
   font-weight: 300;
 }
 
-.pros-highlight {
+.highlight {  /* Changed from .pros-highlight to match HTML */
   color: #C271FF;
   font-weight: 700;
 }
@@ -182,17 +182,18 @@ header nav a:hover {
   font-weight: 300;
 }
 
-.quote-text p {
-  margin: 0;
+.quote-author {
   font-weight: 600;
   font-size: 18px;
+  margin: 0;
 }
 
-.quote-text p:last-of-type {
+.quote-role {
   font-weight: 300;
   font-style: italic;
   font-size: 16px;
   opacity: 0.8;
+  margin: 0;
 }
 
 /* VIDEOS SECTION */
@@ -303,122 +304,167 @@ article {
   width: 48px;
   height: 48px;
 }
-
-
 /* MEMBERSHIP SECTION */
 .membership-section {
- padding: 20px 5px;
- background-color: #071629;
- text-align: center;
+  padding: 80px 20px;
+  background-color: #071629;
+  text-align: center;
 }
 
 .membership-section h2 {
-  font-family: Source Sans Pro, light;
-  font-size: 36px;
-  margin-bottom: 40px;
-  color: #fffbfb;
+  font-size: 32px;
+  margin-bottom: 60px;
+  font-weight: 300;
 }
 
-.membership-section h2 span {
-  color: #C271FF; /* Highlight color */
-}
-
-.membership-section > div {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
+.membership-grid {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
   gap: 30px;
-  max-width: 900px;
+  max-width: 1000px;
+  margin: 0 auto 40px;
+}
+
+.membership-plan {
+  width: 220px;
+}
+
+.membership-plan img {
+  width: 50px;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.membership-plan h3 {
+  font-size: 18px;
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+
+.membership-plan p {
+  font-size: 14px;
+  line-height: 1.6;
+  opacity: 0.7;
+}
+
+.register-button {
+  padding: 14px 30px;
+  font-size: 14px;
+  background-color: #C271FF;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+  text-transform: uppercase;
+}
+
+.register-button:hover {
+  background-color: #a451e4;
+  transform: translateY(-2px);
+}
+
+/* FAQ SECTION */
+.faq-section {
+  padding: 80px 40px;
+  background-color: #fff;
+  max-width: 1200px;
   margin: 0 auto;
 }
 
-.membership-section div div {
-  background-color: #071629;
-  padding: 20px;
-  border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(224, 37, 37, 0.08);
-  transition: transform 0.3s ease;
-}
-
-.membership-section div div:hover {
-  transform: translateY(-5px);
-}
-
-.membership-section div img {
-  width: 100%;
-  border-radius: 8px;
-  margin-bottom: 15px;
-}
-
-.membership-section div h3 {
-  font-size: 20px;
-  margin-bottom: 10px;
-  color: #ffffff;
-}
-
-.membership-section div p {
-  font-size: 16px;
-  color: #ffffff;
-}
-
-.membership-section button {
-  grid-column: center;
-  padding: 5px 80px;
-  font-size: 14px;
-  background-color: #C271FF;
-  color: #fff;
-  border: none;
-  border-radius: 50px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
-.membership-section button:hover {
-  background-color: #a15fd8;
-}
-/* FAQ Section - Minimal Style */
-.faq-section {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 2rem;
-    font-family: Arial, sans-serif;
-}
-
 .faq-section h2 {
-    text-align: center;
-    font-size: 2rem;
-    margin-bottom: 2rem;
-    color: #333;
+  font-size: 32px;
+  text-align: center;
+  color: #071629;
+  margin-bottom: 60px;
+  font-weight: 300;
 }
 
 .faq-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 1.5rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
 }
 
 .faq-item {
-    background: #ffffff;
-    padding: 1.5rem;
+  padding: 0;
 }
 
 .faq-item h3 {
-    color: #222;
-    font-family: Source Sans Pro, bold ;
-    font-size: 16px;
-    margin-bottom: 0.8rem;
+  font-size: 18px;
+  color: #071629;
+  margin-bottom: 15px;
+  font-weight: 600;
 }
 
 .faq-item p {
-    color: #071629;
-    font-family: 'Source Sans Pro', regular, sans-serif;
-    font-size: 14px;
-    line-height: 1.5;
-    font-size: 0.95rem;
+  font-size: 14px;
+  color: #071629;
+  line-height: 1.6;
+  opacity: 0.7;
 }
 
-/* Responsive - stacks on mobile */
-@media (max-width: 600px) {
-    .faq-grid {
-        grid-template-columns: 1fr;
-    }
+/* FOOTER */
+footer {
+  background-color: #071629;
+  padding: 60px 40px;
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.social-links {
+  display: flex;
+  gap: 20px;
+}
+
+.social-links img {
+  width: 24px;
+  height: 24px;
+}
+
+.copyright {
+  font-size: 12px;
+  opacity: 0.6;
+}
+
+/* RESPONSIVE ADJUSTMENTS */
+@media (max-width: 768px) {
+  header {
+    padding: 30px 20px;
+  }
+  
+  .hero h1 {
+    font-size: 48px;
+  }
+  
+  .pros-list {
+    gap: 20px;
+  }
+  
+  .quote-section {
+    flex-direction: column;
+    padding: 60px 30px;
+    text-align: center;
+  }
+  
+  .video-grid, .membership-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .faq-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .footer-content {
+    flex-direction: column;
+    gap: 30px;
+  }
 }
