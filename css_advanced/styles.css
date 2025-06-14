@@ -375,3 +375,50 @@ article {
 .membership-section button:hover {
   background-color: #a15fd8;
 }
+/* FAQ Section - Minimal Style */
+.faq-section {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+    font-family: Arial, sans-serif;
+}
+
+.faq-section h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    color: #333;
+}
+
+.faq-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+}
+
+.faq-item {
+    background: #ffffff;
+    padding: 1.5rem;
+}
+
+.faq-item h3 {
+    color: #222;
+    font-family: Source Sans Pro, bold ;
+    font-size: 16px;
+    margin-bottom: 0.8rem;
+}
+
+.faq-item p {
+    color: #071629;
+    font-family: 'Source Sans Pro', regular, sans-serif;
+    font-size: 14px;
+    line-height: 1.5;
+    font-size: 0.95rem;
+}
+
+/* Responsive - stacks on mobile */
+@media (max-width: 600px) {
+    .faq-grid {
+        grid-template-columns: 1fr;
+    }
+}
